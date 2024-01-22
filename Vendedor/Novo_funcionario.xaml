@@ -1,0 +1,28 @@
+﻿<Window x:Class="Vendedor.Novo_funcionario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vendedor"
+        mc:Ignorable="d"
+        Title="Novo_funcionario" Height="450" Width="800">
+    <Window.Icon>
+        <ImageSource>Images/Logo_sem_Fundo.png</ImageSource>
+    </Window.Icon>
+    <Grid Background="#FF246D68">
+        <Label x:Name="Nome" Content="Nome:" HorizontalAlignment="Left" Margin="51,53,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.868,0.526"/>
+        <Label x:Name="ID" Content="ID" HorizontalAlignment="Left" Margin="85,95,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.868,0.526"/>
+        <Label x:Name="Senha" Content="Senha:" HorizontalAlignment="Left" Margin="58,137,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.868,0.526"/>
+        <Label x:Name="Nivel" Content="Nivel:" HorizontalAlignment="Left" Margin="51,268,0,0" VerticalAlignment="Top" FontSize="20" RenderTransformOrigin="0.868,0.526"/>
+        <TextBox x:Name="Nome_box" HorizontalAlignment="Left" Margin="161,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" Height="20"/>
+        <Slider HorizontalAlignment="Left" x:Name="Lev" Margin="161,286,0,0" VerticalAlignment="Top" Width="245" Maximum="3" Value="0" />
+        <Button x:Name="Voltar" Click="Voltar_Click" Content="Voltar" HorizontalAlignment="Left" Margin="51,380,0,0" VerticalAlignment="Top" Width="150" Height="35"/>
+        <Button x:Name="Conferir" Click="Adicionar_Click" Content="Conferir" HorizontalAlignment="Left" Margin="302,375,0,0" VerticalAlignment="Top" Width="150" Height="35"/>
+        <Label Content="Salario" HorizontalAlignment="Left" Margin="55,0,0,0" VerticalAlignment="Center" FontSize="20" RenderTransformOrigin="0.868,0.526"/>
+        <TextBox x:Name="Salario_box" HorizontalAlignment="Left" Margin="161,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="239" Height="19"/>
+        <TextBlock x:Name="ID_gerar" HorizontalAlignment="Left" Margin="161,105,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" FontSize="18" Background="White" Height="20" Text="ID gerado altoamticamente"/>
+        <TextBlock x:Name="Senha_gerar" HorizontalAlignment="Left" Margin="161,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239" FontSize="16" Background="White" Height="20" Text="Sernha gerada automaticamente"/>
+        <Button x:Name="Finalizar" Click="Finalizar_Click" Content="Finalizar" HorizontalAlignment="Left" Margin="592,380,0,0" VerticalAlignment="Top" Width="150" Height="35" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
